@@ -26,13 +26,13 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">About Me</h2>
                 <div className="sidebar-content">
                   <p className="text-sm">
-                    I'm <Link href="/me" className="text-indigo-500 dark:text-indigo-400">Rudy</Link>, I build tools at the intersection of code and capital. This is my digital sandbox. 🏝️
+                    I&apos;m <Link href="/me" className="text-indigo-500 dark:text-indigo-400">Rudy</Link>, I build tools at the intersection of code and capital. This is my digital sandbox. 🏝️
                   </p>
                 </div>
               </div>
 
               <div className="sidebar-section m-6 pb-6 border-b border-gray-300 dark:border-gray-800">
-                <h2 className="font-semibold mb-2 text-[var(--foreground)]">Let's Connect</h2>
+                <h2 className="font-semibold mb-2 text-[var(--foreground)]">Let&apos;s Connect</h2>
                 <div className="sidebar-links">
                   <nav className="text-sm">
                     <a href="" className="text-indigo-500 dark:text-indigo-400">Resume</a>

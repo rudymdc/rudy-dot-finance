@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Moon, Sun, Github, Linkedin, Twitter } from "lucide-react";
 import useTheme from "@/lib/useTheme";
-import Footer from "@/components/Footer";
-import Sidebar from "@/components/Sidebar";
-import TopNav from "@/components/TopNav";
+import Image from "next/image";
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
@@ -78,9 +75,11 @@ export default function Home() {
                     className="border border-gray-300 dark:border-gray-700 rounded-md overflow-hidden hover:border-accent transition bg-[var(--background)] shadow-sm"
                   >
                     {img && (
-                      <img
+                      <Image
                         src={img}
                         alt={title}
+                        width={640}
+                        height={160}
                         className="w-full h-40 object-cover border-b border-gray-200 dark:border-gray-700"
                       />
                     )}
@@ -137,9 +136,11 @@ export default function Home() {
                     className="border border-gray-300 dark:border-gray-700 rounded-md overflow-hidden hover:border-accent transition bg-[var(--background)] shadow-sm"
                   >
                     {img && (
-                      <img
+                      <Image
                         src={img}
                         alt={title}
+                        width={640}
+                        height={160}
                         className="w-full h-40 object-cover border-b border-gray-200 dark:border-gray-700"
                       />
                     )}

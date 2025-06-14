@@ -4,7 +4,7 @@
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-gray-200 dark:border-gray-800 py-6 text-sm text-gray-500 dark:text-gray-400">
-      <div className="text-left max-w-3xl mx-auto">
+      <div className="text-left max-w-3xl mx-auto px-6 xl:px-0">
         <div className="space-x-4 mb-3">
           <a
               href="https://nextjs.org"
@@ -12,13 +12,6 @@ export default function Footer() {
               target="_blank" rel="noopener noreferrer"
             >
               Email
-            </a>
-            <a
-              href="https://nextjs.org"
-              className="text-indigo-500 hover:underline dark:text-indigo-400"
-              target="_blank" rel="noopener noreferrer"
-            >
-              Resume
             </a>
             <a
               href="https://nextjs.org"

@@ -35,7 +35,6 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Let&apos;s Connect</h2>
                 <div className="sidebar-links">
                   <nav className="text-sm">
-                    <a href="" className="text-indigo-500 dark:text-indigo-400">Resume</a>
                     <a href="" className="text-indigo-500 dark:text-indigo-400">Calendly</a>
                     <a href="" className="text-indigo-500 dark:text-indigo-400">LinkedIn</a>
                     <a href="" className="text-indigo-500 dark:text-indigo-400">Github</a>

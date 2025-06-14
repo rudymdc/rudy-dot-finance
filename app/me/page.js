@@ -1,4 +1,5 @@
 import { Permanent_Marker } from "next/font/google"
+import Image from "next/image";
 
 const permanentMarker = Permanent_Marker({
   weight: "400",
@@ -10,11 +11,13 @@ export default function MePage() {
   return (
     <>
       <div className="relative mb-6">
-        <div className="item float-right ml-6 mt-2 mb-2 ">
+        <div className="item float-right ml-6 mt-2 mb-2">
           <div className="polaroid">
-            <img
+            <Image
               src="/images/me4.jpg" // Replace with your actual image path
               alt="Rudy Martin Del Campo"
+              width={3724}
+              height={5586}
               className="w-75 object-cover"
             />
             <p className="caption text-black dark:text-black">

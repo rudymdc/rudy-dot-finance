@@ -1,26 +1,106 @@
+/* app/globals.css */
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  --accent: #0f172a;
+  --radius: 0.5rem;
+  --font-sans: 'Inter', sans-serif;
 
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --border-radius: var(--radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --border-radius: var(--radius);
+}
+
+/* Dark mode overrides using the .dark class */
+.dark {
+  --background: #181818;
+  --foreground: #ededed;
+}
+
+.dark div aside {
+  --background: #1f1f1f;
+  --foreground: #ededed;
+}
+
+/* Apply styles */
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main h1 {
+  width: fit-content;
+  padding-bottom: 0.2rem;
+}
+
+
+.sidebar-links nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.sidebar-menu nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: -12px;
+}
+
+.sidebar-menu nav a {
+  padding: 6px .75rem;
+  border-radius: 6px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+
+.item {
+  /* width: 30%; */
+  display: inline-block;
+  margin-top: 2rem;
+  transform: rotate(5deg);
+  margin-top: -1em;
+  margin-right: -8em;
+  /* filter: grayscale(100%); */
+}
+.polaroid {
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  text-align: center;
+  line-height: 2.5em;
+  font-family: 'Permanent Marker'
+}
+
+.list-disc li {
+  padding-bottom: 0.25em;
 }

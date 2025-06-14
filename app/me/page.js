@@ -1,9 +1,9 @@
-import { Permanent_Marker } from 'next/font/google'
+import { Permanent_Marker } from "next/font/google"
 
 const permanentMarker = Permanent_Marker({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap'
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap"
 })
 
 export default function MePage() {
@@ -23,20 +23,20 @@ export default function MePage() {
           </div>
         </div>
 
-        <div className='about-me'>
+        <div className="about-me">
           <h1 className="text-4xl font-bold mb-8 text-[var(--foreground)] border-b-5 border-indigo-500">About Me</h1>
           <p className="text-[var(--foreground)] mb-8">
-            I’m Rudy — a finance and strategy operator with a builder’s mindset. I work at the intersection of code and capital to help startups scale smartly and sustainably.
+            I&apos;m Rudy — a finance and strategy operator with a builder&apos;s mindset. I work at the intersection of code and capital to help startups scale smartly and sustainably.
           </p>
           <p className="text-[var(--foreground)] mb-8">
             My experience spans FP&A, GTM analytics, and data infrastructure across high-growth startups. I enjoy automating workflows, modeling complex systems, and uncovering insights in messy data.
           </p>
           <p className="text-[var(--foreground)]">
-            Outside of work, I’m a new dad, endurance athlete in denial, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
+            Outside of work, I&apos;m a new dad, endurance athlete in denial, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
           </p>          
         </div>
 
-        <div className='about-contact'>
+        <div className="about-contact">
           <h1 className="text-4xl font-bold mt-16 mb-1 text-[var(--foreground)]">Contact</h1>
           <p className="text-[var(--foreground)] text-lg mb-2 text-gray-500 dark:text-gray-400">
             Send me an email to say hi or connect via socials.
@@ -50,14 +50,14 @@ export default function MePage() {
           </ul>
         </div>
 
-        <div className='about-now'>
-          <h1 className="text-4xl font-bold mt-16 mb-1 text-[var(--foreground)]">What I'm Doing Now</h1>
+        <div className="about-now">
+          <h1 className="text-4xl font-bold mt-16 mb-1 text-[var(--foreground)]">What I&apos;m Doing Now</h1>
           <p className="text-[var(--foreground)] text-lg mb-2 text-gray-500 dark:text-gray-400 italic">
             Updated June 13, 2025
           </p>
 
           <ul className="list-disc pl-4">
-            <li>Reading Poor Charlie's Almanac</li>
+            <li>Reading Poor Charlie&apos;s Almanac</li>
             <li>Playing Legend of Zelda</li>
             <li>Exploring HyperEVM</li>
             <li>Refurbishing an MPC 2000XL</li>

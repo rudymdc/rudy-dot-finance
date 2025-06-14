@@ -25,7 +25,7 @@ export default function Footer() {
               className="text-indigo-500 hover:underline dark:text-indigo-400"
               target="_blank" rel="noopener noreferrer"
             >
-              Let's Chat
+              Let&apos;s Chat
             </a>
             <a
               href="https://nextjs.org"

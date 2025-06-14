@@ -19,17 +19,17 @@ export default function Home() {
               {/* Image floated to the right */}
               <div className="intro-img relative mb-6">
               <h1 className="text-4xl font-bold mb-6 text-[var(--foreground)] border-b-5 border-indigo-500">
-                Hey, I'm Rudy!
+                Hey, I&apos;m Rudy!
               </h1>
 
                 <p className="text-[var(--foreground)] mb-6">
-                  I’m a finance and strategy operator with a builder’s mindset — blending code and capital to help startups scale.
-                  I’ve led FP&A, GTM analytics, and data infrastructure at high-growth companies, and I’m currently exploring the
+                  I&apos;m a finance and strategy operator with a builder&apos;s mindset — blending code and capital to help startups scale.
+                  I&apos;ve led FP&A, GTM analytics, and data infrastructure at high-growth companies, and I&apos;m currently exploring the
                   edges of automation, investing, and onchain experiments.
                 </p>
                 <p className="text-[var(--foreground)] mb-6">
-                  Outside of work, I’m a new dad, an endurance athlete in denial, and a sucker for great coffee and sci-fi. This
-                  site is where I share projects, frameworks, and ideas I’m refining along the way.
+                  Outside of work, I&apos;m a new dad, an endurance athlete in denial, and a sucker for great coffee and sci-fi. This
+                  site is where I share projects, frameworks, and ideas I&apos;m refining along the way.
                 </p>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="main-section mb-18">
               <h2 className="text-3xl font-bold mb-1 text-[var(--foreground)]">Case Studies</h2>
               <p className="text-[var(--foreground)] text-lg mb-5 text-gray-500 dark:text-gray-400">
-                  Long-form debriefs on a variety of projects I've worked on over the years.
+                  Long-form debriefs on a variety of projects I&apos;ve worked on over the years.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[{

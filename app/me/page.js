@@ -1,5 +1,6 @@
 import { Permanent_Marker } from "next/font/google"
 import Image from "next/image";
+import Link from "next/link";
 
 const permanentMarker = Permanent_Marker({
   weight: "400",
@@ -46,10 +47,10 @@ export default function MePage() {
           </p>
 
           <ul className="list-disc pl-4">
-            <li>Email: hello@rudy.finance</li>
+            <li>Email: <Link href="mailto:hello@rudy.financ" target="_blank" className="text-indigo-500 dark:text-indigo-400">hello@rudy.finance</Link></li>
             <li>Calendly</li>
-            <li>LinkedIn</li>
-            <li>Github</li>
+            <li><Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400">LinkedIn</Link></li>
+            <li><Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400">Github</Link></li>
           </ul>
         </div>
 
@@ -60,11 +61,11 @@ export default function MePage() {
           </p>
 
           <ul className="list-disc pl-4">
-            <li>Reading Poor Charlie&apos;s Almanac</li>
-            <li>Playing Legend of Zelda</li>
-            <li>Exploring HyperEVM</li>
-            <li>Refurbishing an MPC 2000XL</li>
-            <li>Learning how to landscape and lay new sod</li>
+            <li>Reading <Link href="https://press.stripe.com/poor-charlies-almanack" target="_blank" className="text-indigo-500 dark:text-indigo-400">Poor Charlie&apos;s Almanac</Link></li>
+            <li>Playing <Link href="https://zelda.nintendo.com/tears-of-the-kingdom/ca/" target="_blank" className="text-indigo-500 dark:text-indigo-400">Legend of Zelda: Tears of the Kingdom</Link></li>
+            <li>Exploring <Link href="https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm" target="_blank" className="text-indigo-500 dark:text-indigo-400">HyperEVM</Link></li>
+            <li>Refurbishing an <Link href="https://www.soundonsound.com/reviews/akai-mpc2000xl" target="_blank" className="text-indigo-500 dark:text-indigo-400">MPC 2000XL</Link></li>
+            <li>Learning how to landscape and <Link href="https://thegrassoutlet.com/grass-care/" target="_blank" className="text-indigo-500 dark:text-indigo-400">lay new sod</Link></li>
           </ul>
         </div>
 

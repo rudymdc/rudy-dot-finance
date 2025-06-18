@@ -35,9 +35,9 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Let&apos;s Connect</h2>
                 <div className="sidebar-links">
                   <nav className="text-sm">
-                    <a href="" className="text-indigo-500 dark:text-indigo-400">Calendly</a>
-                    <a href="" className="text-indigo-500 dark:text-indigo-400">LinkedIn</a>
-                    <a href="" className="text-indigo-500 dark:text-indigo-400">Github</a>
+                    <Link href="" className="text-indigo-500 dark:text-indigo-400">Calendly</Link>
+                    <Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400">LinkedIn</Link>
+                    <Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400">Github</Link>
                   </nav>
                 </div>
               </div>

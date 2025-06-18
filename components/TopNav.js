@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import useTheme from "@/lib/useTheme";
-import { Moon, Sun, Github, Linkedin, Twitter } from "lucide-react";
+import { Moon, Sun, Github, Linkedin, Calendar } from "lucide-react";
 
 
 export default function TopNav() {
@@ -23,14 +23,14 @@ export default function TopNav() {
           <button onClick={toggleTheme} className="text-indigo-500 dark:text-yellow-400 text-[var(--foreground)] hover:text-accent">
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
-          <Link href="https://github.com/rudy" className="text-[var(--foreground)] hover:text-accent">
+          <Link href="https://twitter.com/yourhandle" target="_blank" className="text-[var(--foreground)] hover:text-accent">
+            <Calendar size={16} />
+          </Link>
+          <Link href="https://github.com/rudymdc" target="_blank" className="text-[var(--foreground)] hover:text-accent">
             <Github size={16} />
           </Link>
-          <Link href="https://linkedin.com/in/rudy-martin-del-campo" className="text-[var(--foreground)] hover:text-accent">
+          <Link href="https://linkedin.com/in/rudy-martin-del-campo" target="_blank" className="text-[var(--foreground)] hover:text-accent">
             <Linkedin size={16} />
-          </Link>
-          <Link href="https://twitter.com/yourhandle" className="text-[var(--foreground)] hover:text-accent">
-            <Twitter size={16} />
           </Link>
         </div>
       </div>

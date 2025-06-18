@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
           <>
-            <div className="Intro mb-18">
+            <div className="intro mb-18">
               {/* Heading */}
 
               {/* Image floated to the right */}

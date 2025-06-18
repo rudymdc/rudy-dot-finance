@@ -12,7 +12,7 @@ export default function MePage() {
   return (
     <>
       <div className="relative mb-6">
-        <div className="item float-right ml-6 mt-2 mb-2">
+        <div className="item large float-right ml-6 mt-2 mb-2 hidden lg:inline-block">
           <div className="polaroid">
             <Image
               src="/images/me4.jpg" // Replace with your actual image path
@@ -38,6 +38,21 @@ export default function MePage() {
           <p className="text-[var(--foreground)]">
             Outside of work, I&apos;m a new dad, endurance athlete in denial, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
           </p>          
+        </div>
+
+        <div className="item small px-4 pt-4 pb-2 inline-block lg:hidden">
+          <div className="polaroid">
+            <Image
+              src="/images/me4.jpg" // Replace with your actual image path
+              alt="Rudy Martin Del Campo"
+              width={3724}
+              height={5586}
+              className="w-75 object-cover"
+            />
+            <p className="caption text-black dark:text-black">
+              <span className={permanentMarker.className}>Paris 2025</span>
+            </p>
+          </div>
         </div>
 
         <div className="about-contact">

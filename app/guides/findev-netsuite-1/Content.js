@@ -23,7 +23,7 @@ export default function Content() {
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🔍 What We’re Solving</h2>
-      <p className="text-md mb-4">You're a finance pro who needs:</p>
+      <p className="text-md mb-4">You&apos;re a finance pro who needs:</p>
       <ul className="list-disc list-inside mb-4">
         <li>Fast access to reliable data for reporting and planning</li>
         <li>Insight into sales and marketing performance</li>
@@ -99,11 +99,11 @@ export default function Content() {
         <pre className="bg-gray-100 dark:bg-gray-700 px-1 rounded-xs mb-6 py-1 px-6 overflow-y-auto">
           <p><span className="text-cyan-600 dark:text-cyan-400">DESCRIBE transaction</span>;</p>
           <p><span className="text-[var(--foreground)]">-- or</span></p>
-          <p><span className="text-cyan-600 dark:text-cyan-400">SELECT</span> * <span className="text-cyan-600 dark:text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-600 dark:text-cyan-400">WHERE</span> table_name = <span className="text-emerald-600 dark:text-emerald-400">'transaction'</span>;</p>
+          <p><span className="text-cyan-600 dark:text-cyan-400">SELECT</span> * <span className="text-cyan-600 dark:text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-600 dark:text-cyan-400">WHERE</span> table_name = <span className="text-emerald-600 dark:text-emerald-400">&apos;transaction&apos;</span>;</p>
         </pre>
         <li>Search for all fields containing a term (e.g. marketing):</li>
         <pre className="bg-gray-100 dark:bg-gray-700 px-1 rounded-xs mb-6 py-1 px-6 overflow-y-auto">
-          <p><span className="text-cyan-600 dark:text-cyan-400">SELECT</span> * <span className="text-cyan-600 dark:text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-600 dark:text-cyan-400">WHERE</span> column_name ILIKE <span className="text-emerald-600 dark:text-emerald-400">'%marketing%'</span>;</p>
+          <p><span className="text-cyan-600 dark:text-cyan-400">SELECT</span> * <span className="text-cyan-600 dark:text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-600 dark:text-cyan-400">WHERE</span> column_name ILIKE <span className="text-emerald-600 dark:text-emerald-400">&apos;%marketing%&apos;</span>;</p>
         </pre>
       </ol>
       <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
@@ -120,8 +120,8 @@ export default function Content() {
         <p><span className="text-cyan-600 dark:text-cyan-400">FROM transaction</span> tran</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">JOIN</span> transactionline tranl <span className="text-cyan-600 dark:text-cyan-400">ON</span> tran.id = tranl.transaction</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">LEFT JOIN</span> customrecord_marketingchannel channel <span className="text-cyan-600 dark:text-cyan-400">ON</span> tran.custbody_marketing_channel = channel.id</p>
-        <p><span className="text-cyan-600 dark:text-cyan-400">WHERE</span> tran.type = <span className="text-emerald-600 dark:text-emerald-400">'SalesOrd'</span></p>
-        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> tran.trandate &gt;= DATEADD(<span className="text-emerald-600 dark:text-emerald-400">'month'</span>, -<span className="text-rose-600 dark:text-rose-400">6</span>, <span className="text-cyan-600 dark:text-cyan-400">CURRENT_DATE</span>)</p>
+        <p><span className="text-cyan-600 dark:text-cyan-400">WHERE</span> tran.type = <span className="text-emerald-600 dark:text-emerald-400">&apos;SalesOrd&apos;</span></p>
+        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> tran.trandate &gt;= DATEADD(<span className="text-emerald-600 dark:text-emerald-400">&apos;month&apos;</span>, -<span className="text-rose-600 dark:text-rose-400">6</span>, <span className="text-cyan-600 dark:text-cyan-400">CURRENT_DATE</span>)</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">GROUP BY</span> tran.trandate, channel.name</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">ORDER BY</span> tran.trandate;</p>
       </pre>
@@ -134,10 +134,10 @@ export default function Content() {
         <p className="pl-4">SUM(exp.amount) <span className="text-cyan-600 dark:text-cyan-400">AS</span> spend</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">FROM transaction</span> exp</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">JOIN</span> department dept <span className="text-cyan-600 dark:text-cyan-400">ON</span> exp.department = dept.id</p>        
-        <p><span className="text-cyan-600 dark:text-cyan-400">WHERE</span> exp.type = <span className="text-emerald-600 dark:text-emerald-400">'ExpRpt'</span></p>
+        <p><span className="text-cyan-600 dark:text-cyan-400">WHERE</span> exp.type = <span className="text-emerald-600 dark:text-emerald-400">&apos;ExpRpt&apos;</span></p>
         
-        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> dept.name <span className="text-cyan-600 dark:text-cyan-400">IN</span> (<span className="text-emerald-600 dark:text-emerald-400">'Paid Search', 'Email', 'Social'</span>)</p>
-        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> exp.trandate &gt;= DATEADD(<span className="text-emerald-600 dark:text-emerald-400">'month'</span>, -<span className="text-rose-600 dark:text-rose-400">6</span>, <span className="text-cyan-600 dark:text-cyan-400">CURRENT_DATE</span>)</p>
+        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> dept.name <span className="text-cyan-600 dark:text-cyan-400">IN</span> (<span className="text-emerald-600 dark:text-emerald-400">&apos;Paid Search&apos;, &apos;Email&apos;, &apos;Social&apos;</span>)</p>
+        <p className="pl-4"><span className="text-cyan-600 dark:text-cyan-400">AND</span> exp.trandate &gt;= DATEADD(<span className="text-emerald-600 dark:text-emerald-400">&apos;month&apos;</span>, -<span className="text-rose-600 dark:text-rose-400">6</span>, <span className="text-cyan-600 dark:text-cyan-400">CURRENT_DATE</span>)</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">GROUP BY</span> exp.trandate, dept.name</p>
         <p><span className="text-cyan-600 dark:text-cyan-400">ORDER BY</span> exp.trandate;</p>
       </pre>

@@ -40,7 +40,7 @@ export default function MePage() {
           </p>          
         </div>
 
-        <div className="item small px-4 pt-4 pb-2 inline-block lg:hidden">
+        <div className="item small inline-block lg:hidden">
           <div className="polaroid">
             <Image
               src="/images/me4.jpg" // Replace with your actual image path

@@ -22,14 +22,14 @@ export default function Content() {
       <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🔍 What We’re Solving</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🔍 What We&apos;re Solving</h2>
       <p className="text-md mb-4">You&apos;re a finance pro who needs:</p>
       <ul className="list-disc list-inside mb-4">
         <li>Fast access to reliable data for reporting and planning</li>
         <li>Insight into sales and marketing performance</li>
         <li>A way to avoid bottlenecks caused by manual exports or engineering delays</li>
       </ul>
-      <p className="text-md mb-12"><span className="font-bold">Why this matters:</span> Every day you wait for a dashboard is a day you’re not acting on the numbers. Having direct query access to NetSuite lets you validate assumptions, flag anomalies, and help the business move faster.</p>
+      <p className="text-md mb-12"><span className="font-bold">Why this matters:</span> Every day you wait for a dashboard is a day you&apos;re not acting on the numbers. Having direct query access to NetSuite lets you validate assumptions, flag anomalies, and help the business move faster.</p>
       <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
@@ -179,7 +179,7 @@ export default function Content() {
       <p className="text-md mb-4">When:</p>
       <ul className="list-disc list-inside mb-4">
         <li>You want to run this job daily</li>
-        <li>You’re working with 100k+ rows</li>
+        <li>You&apos;re working with 100k+ rows</li>
         <li>You need to schedule loads into a warehouse</li>
       </ul>
       <p className="text-md mb-12">Move to <span className="font-bold">v2: Python Insight Lab</span> with REST-based pipelines and visualizations.</p>

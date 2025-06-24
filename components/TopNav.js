@@ -50,10 +50,10 @@ export default function TopNav() {
       {!isOpen ? <></> : 
       <div className="max-w-3xl mx-auto flex justify-between items-center py-4 px-6 xl:px-0 text-m bg-gray-50 dark:bg-gray-950">
           <nav className="block md:hidden">
-            <p className='mb-2'><Link href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link></p>
-            <p className='mb-2'><Link href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link></p>
-            <p className='mb-2'><Link href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link></p>
-            <p className='mb-2'><Link href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link></p>
+            <p className='mb-2'><Link onClick={handleClick} href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link></p>
+            <p className='mb-2'><Link onClick={handleClick} href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link></p>
+            <p className='mb-2'><Link onClick={handleClick} href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link></p>
+            <p className='mb-2'><Link onClick={handleClick} href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link></p>
           </nav>
       </div>    
       }      

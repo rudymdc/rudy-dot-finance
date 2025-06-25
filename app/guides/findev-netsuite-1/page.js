@@ -2,7 +2,7 @@
 import Content from "./Content";
 
 export const metadata = {
-  title: "FinDev Guide - NetSuite SQL Playground",
+  title: "FinDev Guide - NetSuite - v1: The SQL Playground",
   description:
     "How to query NetSuite data with SuiteAnalytics Connect + DBeaver to unblock Finance.",
 };

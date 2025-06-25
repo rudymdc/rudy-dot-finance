@@ -47,10 +47,18 @@ export default function Sidebar() {
                 <div className="sidebar-menu">
                   <nav className="text-sm">
                     {/* <Link href="" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">AI for Finance</Link> */}
-                    <Link href="/guides/findev-netsuite-1" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">FinDev for Netsuite: SQL</Link>
-                    <Link href="/guides/findev-netsuite-1" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">FinDev for Netsuite: Python</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">macOS Setup for FinDev</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Windows Setup for FinDev</Link>
+                    <Link href="/guides/findev-netsuite-1" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      FinDev for Netsuite: SQL
+                    </Link>
+                    <Link href="/guides/findev-netsuite-2" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      FinDev for Netsuite: Python
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      macOS Setup for FinDev
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Windows Setup for FinDev
+                    </Link>
                     {/* <Link href="" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Python for Finance</Link> */}
                   </nav>
                 </div>
@@ -60,12 +68,24 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Case Studies</h2>
                 <div className="sidebar-menu">
                   <nav className="text-sm">
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">GTM & Growth Strategy</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Revenue Operations</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Product & Retention</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Data Engineering & KPIs</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Sales & Comp Planning</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">G&A Budgeting</Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      GTM & Growth Strategy
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Revenue Operations
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Product & Retention
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Data Engineering & KPIs
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Sales & Comp Planning
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      G&A Budgeting
+                    </Link>
                   </nav>
                 </div>
               </div>
@@ -74,8 +94,12 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Projects</h2>
                 <div className="sidebar-menu">
                   <nav className="text-sm">
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">LiquidLaunch Liquidity Sniper</Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Telegram Chat Analytics</Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      LiquidLaunch Liquidity Sniper
+                    </Link>
+                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      Telegram Chat Analytics
+                    </Link>
                   </nav>
                 </div>
               </div>

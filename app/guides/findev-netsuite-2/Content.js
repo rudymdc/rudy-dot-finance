@@ -232,7 +232,7 @@ export default function Content() {
             <p><span className="text-zinc-500"># Merge and Calculate CAC</span></p>
             <p>merged = pd.merge(sales_df, spend_df, </p>
             <p>                  on=[<span className="text-lime-400">&quot;trandate&quot;</span>, <span className="text-lime-400">&quot;marketing_channel&quot;</span>], how=<span className="text-lime-400">&quot;inner&quot;</span>)</p>
-            <p>merged[<span className="text-lime-400">"CAC"</span>] = merged[<span className="text-lime-400">&quot;spend&quot;</span>] / merged[<span className="text-lime-400">&quot;orders&quot;</span>]</p>
+            <p>merged[<span className="text-lime-400">&quot;CAC&quot;</span>] = merged[<span className="text-lime-400">&quot;spend&quot;</span>] / merged[<span className="text-lime-400">&quot;orders&quot;</span>]</p>
             <p> </p>
             <p><span className="text-zinc-500"># Plot CAC trend</span></p>
             <p>fig, ax = plt.subplots(figsize=(<span className="text-amber-400">10</span>, <span className="text-amber-400">5</span>))</p>

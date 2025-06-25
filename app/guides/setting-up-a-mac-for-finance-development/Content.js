@@ -257,8 +257,8 @@ export default function Content() {
         </div>
         <div className="text-zinc-50">
           <pre className="p-4 overflow-y-auto scroll-color">
-            <p>git config --global user.name <span className="text-lime-300">"Your Name"</span></p>
-            <p>git config --global user.email <span className="text-lime-300">"you@example.com"</span></p>
+            <p>git config --global user.name <span className="text-lime-300">&quot;Your Name&quot;</span></p>
+            <p>git config --global user.email <span className="text-lime-300">&quot;you@example.com&quot;</span></p>
           </pre>
         </div>
       </div>

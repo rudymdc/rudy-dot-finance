@@ -64,7 +64,7 @@ export default function Content() {
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">⚙️ Setting Up Your SQL Environment</h2>
-      <p className="text-md mb-6">Alright, let’s get your tools set up so we can write and run queries directly against your NetSuite data.</p>
+      <p className="text-md mb-6">Alright, let&#39;s get your tools set up so we can write and run queries directly against your NetSuite data.</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">1. Install DBeaver</h3>
       <ol className="list-disc list-inside mb-6 overflow-y-auto">
@@ -95,14 +95,14 @@ export default function Content() {
       
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">4. Test and Save Connection</h3>
       <ol className="list-disc list-inside mb-6 overflow-y-auto mb-12">
-        <li>You should see "Connected" in the test window.</li>
+        <li>You should see &quot;Connected&quot; in the test window.</li>
       </ol>
       
       <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📃 Exploring the NetSuite Schema</h2>
-      <p className="text-md mb-2">Now that you’re connected, let’s explore the data structure so you can build effective queries.</p>
+      <p className="text-md mb-2">Now that you&#39;re connected, let&#39;s explore the data structure so you can build effective queries.</p>
       <p className="text-md mb-6">To get started, right-click your NetSuite connection in DBeaver and choose New SQL Script to open a blank query window. This opens a new tab where you can type and run your queries directly.</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Show all available tables:</h3>
@@ -118,7 +118,7 @@ export default function Content() {
       </div>
 
 
-      <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Inspect a table’s fields:</h3>
+      <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Inspect a table&#39;s fields:</h3>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
@@ -149,13 +149,13 @@ export default function Content() {
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📊 Example: Sales & Marketing Performance (CAC)</h2>
-      <p className="text-md mb-4">Let’s pull two datasets — one for sales orders and one for marketing spend — to estimate Customer Acquisition Cost (CAC). Export both queries to Excel and calculate:</p>
+      <p className="text-md mb-4">Let&#39;s pull two datasets — one for sales orders and one for marketing spend — to estimate Customer Acquisition Cost (CAC). Export both queries to Excel and calculate:</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-4">
         <pre className="p-4 text-zinc-50 overflow-y-auto">
           <p>CAC = spend / orders</p>
         </pre>
       </div>
-      <p className="text-md mb-8">You’ll group both queries by marketing channel and time period to compare performance over the past 6 months.</p>
+      <p className="text-md mb-8">You&#39;ll group both queries by marketing channel and time period to compare performance over the past 6 months.</p>
 
 
 
@@ -186,7 +186,7 @@ export default function Content() {
       </div>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Sample Query 2: Marketing Spend by Channel</h3>
-      <p className="text-md mb-4">🧠 What this does: this query pulls expense report totals by date and department (used here as a proxy for marketing channel) for the last 6 months. You’ll use this to calculate CAC.</p>
+      <p className="text-md mb-4">🧠 What this does: this query pulls expense report totals by date and department (used here as a proxy for marketing channel) for the last 6 months. You&#39;ll use this to calculate CAC.</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-8">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
@@ -255,7 +255,7 @@ export default function Content() {
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">✅ Key Takeaway</h2>
-      <p className="text-md mb-4">That’s a wrap on your first exploratory stack! You now have a direct SQL bridge into NetSuite that unlocks fast insights and avoids Excel gymnastics.</p>
+      <p className="text-md mb-4">That&#39;s a wrap on your first exploratory stack! You now have a direct SQL bridge into NetSuite that unlocks fast insights and avoids Excel gymnastics.</p>
       <p className="text-md mb-4">With DBeaver + SuiteAnalytics Connect, you get a live, no-code SQL interface into NetSuite that lets you uncover revenue drivers, spend anomalies, and margin killers—before your coffee gets cold.</p>
       <p className="text-md mb-12"><span className="font-bold">Next up:</span> bringing it to life in code—see <Link className="text-indigo-500 hover:underline" href="/guides/findev-netsuite-2">FinDev Setup v2</Link>.</p>
     </article>

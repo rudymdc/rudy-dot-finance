@@ -121,21 +121,21 @@ export default function Content() {
             <p><span className="text-purple-400">import</span> os, json, requests</p>
             <p><span className="text-purple-400">from</span> requests_oauthlib <span className="text-purple-400">from</span> OAuth1</p>
             <p> </p>
-            <p>NS_ACCOUNT = os.getenv(<span className="text-lime-400">"NS_ACCOUNT"</span>)</p>
-            <p>BASE_URL   = <span className="text-lime-400">f"https://</span><span className="text-rose-400">{'{'}NS_ACCOUNT{'}'}</span><span className="text-lime-400">.suitetalk.api.netsuite.com"</span></p>
-            <p>AUTH       = OAuth1(os.getenv(<span className="text-lime-400">"NS_CK"</span>), os.getenv(<span className="text-lime-400">"NS_CS"</span>),</p>
-            <p>                    os.getenv(<span className="text-lime-400">"NS_TK"</span>), os.getenv(<span className="text-lime-400">"NS_TS"</span>),</p>
-            <p>                    signature_type=<span className="text-lime-400">"AUTH_HEADER"</span>)</p>
+            <p>NS_ACCOUNT = os.getenv(<span className="text-lime-400">&quot;NS_ACCOUNT&quot;</span>)</p>
+            <p>BASE_URL   = <span className="text-lime-400">f&quot;https://</span><span className="text-rose-400">{'{'}NS_ACCOUNT{'}'}</span><span className="text-lime-400">.suitetalk.api.netsuite.com&quot;</span></p>
+            <p>AUTH       = OAuth1(os.getenv(<span className="text-lime-400">&quot;NS_CK&quot;</span>), os.getenv(<span className="text-lime-400">&quot;NS_CS&quot;</span>),</p>
+            <p>                    os.getenv(<span className="text-lime-400">&quot;NS_TK&quot;</span>), os.getenv(<span className="text-lime-400">&quot;NS_TS&quot;</span>),</p>
+            <p>                    signature_type=<span className="text-lime-400">&quot;AUTH_HEADER&quot;</span>)</p>
             <p> </p>
             <p><span className="text-purple-400">def</span> run_suiteql(sql: str, limit=<span className="text-amber-400">1000</span>, offset=<span className="text-amber-400">0</span>):</p>
-            <p>    url = <span className="text-lime-400">f"<span className="text-rose-400">{'{'}BASE_URL{'}'}</span>/services/rest/query/v1/suiteql?limit=<span className="text-rose-400">{'{'}limit{'}'}</span>&offset=<span className="text-rose-400">{'{'}offset{'}'}</span>"</span></p>
+            <p>    url = <span className="text-lime-400">f&quot;<span className="text-rose-400">{'{'}BASE_URL{'}'}</span>/services/rest/query/v1/suiteql?limit=<span className="text-rose-400">{'{'}limit{'}'}</span>&offset=<span className="text-rose-400">{'{'}offset{'}'}</span>&quot;</span></p>
             <p>    resp = requests.post(url,</p>
-            <p>                         headers={'{'}<span className="text-lime-400">"Content-Type"</span>: <span className="text-lime-400">"application/json"</span>{'}'},</p>
+            <p>                         headers={'{'}<span className="text-lime-400">&quot;Content-Type&quot;</span>: <span className="text-lime-400">&quot;application/json&quot;</span>{'}'},</p>
             <p>                         auth=AUTH,</p>
-            <p>                         data=json.dumps({'{'}<span className="text-lime-400">"q"</span>: sql{'}'}))</p>
+            <p>                         data=json.dumps({'{'}<span className="text-lime-400">&quot;q&quot;</span>: sql{'}'}))</p>
             <p>    resp.raise_for_status()</p>
-            <p>    print(<span className="text-lime-400">"✅ Connected to NetSuite and query succeeded."</span>)</p>
-            <p>    return resp.json()[<span className="text-lime-400">"items"</span>]</p>
+            <p>    print(<span className="text-lime-400">&quot;✅ Connected to NetSuite and query succeeded.&quot;</span>)</p>
+            <p>    return resp.json()[<span className="text-lime-400">&quot;items&quot;</span>]</p>
           </pre>
         </div>
       </div>
@@ -199,7 +199,7 @@ export default function Content() {
             <p><span className="text-purple-400">from</span> netsuite_rest <span className="text-purple-400">import</span> run_suiteql</p>
             <p> </p>
             <p><span className="text-zinc-500"># Query: Sales Orders</span></p>
-            <p>sales_sql = <span className="text-lime-400">"""</span></p>
+            <p>sales_sql = <span className="text-lime-400">&quot;&quot;&quot;</span></p>
             <p><span className="text-lime-400">SELECT tran.trandate,</span></p>
             <p><span className="text-lime-400">       channel.name AS marketing_channel,</span></p>
             <p><span className="text-lime-400">       COUNT(DISTINCT tran.id) AS orders,</span></p>
@@ -211,11 +211,11 @@ export default function Content() {
             <p><span className="text-lime-400">  AND tran.trandate &gt;= TO_DATE(&apos;2024-12-01&apos;,&apos;YYYY-MM-DD&apos;)</span></p>
             <p><span className="text-lime-400">GROUP BY tran.trandate, channel.name</span></p>
             <p><span className="text-lime-400">ORDER BY tran.trandate</span></p>
-            <p><span className="text-lime-400">"""</span></p>
+            <p><span className="text-lime-400">&quot;&quot;&quot;</span></p>
             <p>sales_df = pd.DataFrame(run_suiteql(sales_sql))</p>
             <p> </p>
             <p><span className="text-zinc-500"># Query: Marketing Spend</span></p>
-            <p>spend_sql = <span className="text-lime-400">"""</span></p>
+            <p>spend_sql = <span className="text-lime-400">&quot;&quot;&quot;</span></p>
             <p><span className="text-lime-400">SELECT exp.trandate,</span></p>
             <p><span className="text-lime-400">       dept.name AS marketing_channel,</span></p>
             <p><span className="text-lime-400">       SUM(exp.amount) AS spend</span></p>
@@ -226,23 +226,23 @@ export default function Content() {
             <p><span className="text-lime-400">  AND exp.trandate &gt;= TO_DATE(&apos;2024-12-01&apos;,&apos;YYYY-MM-DD&apos;)</span></p>
             <p><span className="text-lime-400">GROUP BY exp.trandate, dept.name</span></p>
             <p><span className="text-lime-400">ORDER BY exp.trandate</span></p>
-            <p><span className="text-lime-400">"""</span></p>
+            <p><span className="text-lime-400">&quot;&quot;&quot;</span></p>
             <p>spend_df = pd.DataFrame(run_suiteql(spend_sql))</p>
             <p> </p>
             <p><span className="text-zinc-500"># Merge and Calculate CAC</span></p>
             <p>merged = pd.merge(sales_df, spend_df, </p>
-            <p>                  on=[<span className="text-lime-400">"trandate"</span>, <span className="text-lime-400">"marketing_channel"</span>], how=<span className="text-lime-400">"inner"</span>)</p>
-            <p>merged[<span className="text-lime-400">"CAC"</span>] = merged[<span className="text-lime-400">"spend"</span>] / merged[<span className="text-lime-400">"orders"</span>]</p>
+            <p>                  on=[<span className="text-lime-400">&quot;trandate&quot;</span>, <span className="text-lime-400">&quot;marketing_channel&quot;</span>], how=<span className="text-lime-400">&quot;inner&quot;</span>)</p>
+            <p>merged[<span className="text-lime-400">"CAC"</span>] = merged[<span className="text-lime-400">&quot;spend&quot;</span>] / merged[<span className="text-lime-400">&quot;orders&quot;</span>]</p>
             <p> </p>
             <p><span className="text-zinc-500"># Plot CAC trend</span></p>
             <p>fig, ax = plt.subplots(figsize=(<span className="text-amber-400">10</span>, <span className="text-amber-400">5</span>))</p>
-            <p><span className="text-purple-400">for</span> channel <span className="text-purple-400">in</span> merged[<span className="text-lime-400">"marketing_channel"</span>].unique():</p>
-            <p>    df = merged[merged[<span className="text-lime-400">"marketing_channel"</span>] == channel]</p>
-            <p>    ax.plot(df[<span className="text-lime-400">"trandate"</span>], df[<span className="text-lime-400">"CAC"</span>], label=channel)</p>
+            <p><span className="text-purple-400">for</span> channel <span className="text-purple-400">in</span> merged[<span className="text-lime-400">&quot;marketing_channel&quot;</span>].unique():</p>
+            <p>    df = merged[merged[<span className="text-lime-400">&quot;marketing_channel&quot;</span>] == channel]</p>
+            <p>    ax.plot(df[<span className="text-lime-400">&quot;trandate&quot;</span>], df[<span className="text-lime-400">&quot;CAC&quot;</span>], label=channel)</p>
             <p> </p>
-            <p>ax.set_title(<span className="text-lime-400">"CAC Over Time by Marketing Channel"</span>)</p>
-            <p>ax.set_xlabel(<span className="text-lime-400">"Date"</span>)</p>
-            <p>ax.set_ylabel(<span className="text-lime-400">"CAC"</span>)</p>
+            <p>ax.set_title(<span className="text-lime-400">&quot;CAC Over Time by Marketing Channel&quot;</span>)</p>
+            <p>ax.set_xlabel(<span className="text-lime-400">&quot;Date&quot;</span>)</p>
+            <p>ax.set_ylabel(<span className="text-lime-400">&quot;CAC&quot;</span>)</p>
             <p>ax.legend()</p>
             <p>plt.tight_layout()</p>
             <p>plt.show()</p>
@@ -323,25 +323,25 @@ export default function Content() {
             <p><span className="text-purple-400">import</span> pandas <span className="text-purple-400">as</span> pd</p>
             <p><span className="text-purple-400">import</span> matplotlib.pyplot <span className="text-purple-400">as</span> plt</p>
             <p> </p>
-            <p>sales_df = pd.read_csv(<span className="text-lime-400">"csv/sales_orders.csv"</span>)</p>
-            <p>spend_df = pd.read_csv(<span className="text-lime-400">"csv/marketing_spend.csv"</span>)</p>
+            <p>sales_df = pd.read_csv(<span className="text-lime-400">&quot;csv/sales_orders.csv&quot;</span>)</p>
+            <p>spend_df = pd.read_csv(<span className="text-lime-400">&quot;csv/marketing_spend.csv&quot;</span>)</p>
             <p> </p>
-            <p>print(<span className="text-lime-400">f"Loaded sales_orders.csv with shape: <span className="text-rose-400">{'{'}sales_df.shape{'}'}</span>"</span>)</p>
-            <p>print(<span className="text-lime-400">f"Loaded marketing_spend.csv with shape: <span className="text-rose-400">{'{'}spend_df.shape{'}'}</span>"</span>)</p>
+            <p>print(<span className="text-lime-400">f&quot;Loaded sales_orders.csv with shape: <span className="text-rose-400">{'{'}sales_df.shape{'}'}</span>&quot;</span>)</p>
+            <p>print(<span className="text-lime-400">f&quot;Loaded marketing_spend.csv with shape: <span className="text-rose-400">{'{'}spend_df.shape{'}'}</span>&quot;</span>)</p>
             <p> </p>
             <p><span className="text-slate-500"># Join and calculate CAC</span></p>
-            <p>merged = pd.merge(sales_df, spend_df, on=[<span className="text-lime-400">"trandate"</span>, <span className="text-lime-400">"marketing_channel"</span>], how=<span className="text-lime-400">"inner"</span>)</p>
-            <p>merged[<span className="text-lime-400">"CAC"</span>] = merged[<span className="text-lime-400">"spend"</span>] / merged[<span className="text-lime-400">"orders"</span>]</p>
+            <p>merged = pd.merge(sales_df, spend_df, on=[<span className="text-lime-400">&quot;trandate&quot;</span>, <span className="text-lime-400">&quot;marketing_channel&quot;</span>], how=<span className="text-lime-400">&quot;inner&quot;</span>)</p>
+            <p>merged[<span className="text-lime-400">&quot;CAC&quot;</span>] = merged[<span className="text-lime-400">&quot;spend&quot;</span>] / merged[<span className="text-lime-400">&quot;orders&quot;</span>]</p>
             <p> </p>
             <p><span className="text-slate-500"># Plot</span></p>
             <p>fig, ax = plt.subplots(figsize=(<span className="text-amber-400">10</span>, <span className="text-amber-400">5</span>))</p>
-            <p><span className="text-purple-400">for</span> channel <span className="text-purple-400">in</span> merged[<span className="text-lime-400">"marketing_channel"</span>].unique():</p>
-            <p>    df = merged[merged[<span className="text-lime-400">"marketing_channel"</span>] == channel]</p>
-            <p>    ax.plot(df[<span className="text-lime-400">"trandate"</span>], df[<span className="text-lime-400">"CAC"</span>], label=channel)</p>
+            <p><span className="text-purple-400">for</span> channel <span className="text-purple-400">in</span> merged[<span className="text-lime-400">&quot;marketing_channel&quot;</span>].unique():</p>
+            <p>    df = merged[merged[<span className="text-lime-400">&quot;marketing_channel&quot;</span>] == channel]</p>
+            <p>    ax.plot(df[<span className="text-lime-400">&quot;trandate&quot;</span>], df[<span className="text-lime-400">&quot;CAC&quot;</span>], label=channel)</p>
             <p> </p>
-            <p>ax.set_title(<span className="text-lime-400">"CAC Over Time by Marketing Channel (CSV Source)"</span>)</p>
-            <p>ax.set_xlabel(<span className="text-lime-400">"Date"</span>)</p>
-            <p>ax.set_ylabel(<span className="text-lime-400">"CAC"</span>)</p>
+            <p>ax.set_title(<span className="text-lime-400">&quot;CAC Over Time by Marketing Channel (CSV Source)&quot;</span>)</p>
+            <p>ax.set_xlabel(<span className="text-lime-400">&quot;Date&quot;</span>)</p>
+            <p>ax.set_ylabel(<span className="text-lime-400">&quot;CAC&quot;</span>)</p>
             <p>ax.legend()</p>
             <p>plt.tight_layout()</p>
             <p>plt.show()</p>

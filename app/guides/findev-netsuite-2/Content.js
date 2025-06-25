@@ -10,7 +10,7 @@ export default function Content() {
       <h1 className="text-4xl font-bold mb-2 text-[var(--foreground)]">FinDev Setup for NetSuite</h1>
       <h2 className="text-2xl mb-8 text-indigo-500">v2: The Python Insight Lab</h2>
       <div className="flex items-center gap-4 mb-8">
-        <Image width="450" height="450" className="w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/images/profile.jpeg" alt="" />
+        <Image width="450" height="450" className="w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/images/profile-2.jpeg" alt="" />
         <div className="font-medium dark:text-white">
             <div>Rudy Martin Del Campo</div>
             <div className="text-sm text-gray-500 dark:text-gray-400">January 28, 2025</div>

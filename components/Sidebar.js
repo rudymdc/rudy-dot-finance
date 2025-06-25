@@ -35,7 +35,7 @@ export default function Sidebar() {
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Let&apos;s Connect</h2>
                 <div className="sidebar-links">
                   <nav className="text-sm">
-                    <Link href="" className="text-indigo-500 dark:text-indigo-400">Calendly</Link>
+                    <Link href="https://calendly.com/hello-rudy/30min" target="_blank" className="text-indigo-500 dark:text-indigo-400">Calendly</Link>
                     <Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400">LinkedIn</Link>
                     <Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400">Github</Link>
                   </nav>
@@ -47,24 +47,24 @@ export default function Sidebar() {
                 <div className="sidebar-menu">
                   <nav className="text-sm">
                     {/* <Link href="" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">AI for Finance</Link> */}
-                    <Link href="/guides/findev-netsuite-1" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
-                      FinDev for Netsuite: SQL
-                    </Link>
-                    <Link href="/guides/findev-netsuite-2" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
-                      FinDev for Netsuite: Python
-                    </Link>
                     <Link href="/guides/setting-up-a-mac-for-finance-development" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
                       macOS Setup for FinDev
                     </Link>
                     <Link href="/guides/setting-up-a-windows-pc-for-finance-development" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
                       Windows Setup for FinDev
                     </Link>
+                    <Link href="/guides/findev-netsuite-1" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      FinDev for Netsuite: SQL
+                    </Link>
+                    <Link href="/guides/findev-netsuite-2" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                      FinDev for Netsuite: Python
+                    </Link>
                     {/* <Link href="" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Python for Finance</Link> */}
                   </nav>
                 </div>
               </div>
 
-              <div className="sidebar-section m-6 pb-6 border-b border-gray-300 dark:border-gray-800">
+              {/* <div className="sidebar-section m-6 pb-6 border-b border-gray-300 dark:border-gray-800">
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Case Studies</h2>
                 <div className="sidebar-menu">
                   <nav className="text-sm">
@@ -88,7 +88,7 @@ export default function Sidebar() {
                     </Link>
                   </nav>
                 </div>
-              </div>
+              </div> */}
 
               <div className="sidebar-section m-6 pb-6 border-b border-gray-300 dark:border-gray-800">
                 <h2 className="font-semibold mb-2 text-[var(--foreground)]">Projects</h2>

@@ -36,7 +36,7 @@ export default function MePage() {
             My experience spans FP&A, GTM analytics, and data infrastructure across high-growth startups. I enjoy automating workflows, modeling complex systems, and uncovering insights in messy data.
           </p>
           <p className="text-[var(--foreground)]">
-            Outside of work, I&apos;m a new dad, endurance athlete in denial, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
+            Outside of work, I&apos;m a new dad, blockchain enthusiast, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
           </p>          
         </div>
 
@@ -63,7 +63,7 @@ export default function MePage() {
 
           <ul className="list-disc pl-4">
             <li>Email: <Link href="mailto:hello@rudy.finance" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">hello@rudy.finance</Link></li>
-            <li>Calendly</li>
+            <li><Link href="https://calendly.com/hello-rudy/30min" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">Calendly</Link></li>
             <li><Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">LinkedIn</Link></li>
             <li><Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">Github</Link></li>
           </ul>

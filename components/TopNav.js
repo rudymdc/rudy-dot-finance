@@ -25,7 +25,7 @@ export default function TopNav() {
         </Link>
         <nav className="space-x-6 hidden md:block">
           <Link href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link>
-          <Link href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link>
+          {/* <Link href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link> */}
           <Link href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link>
           <Link href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link>
         </nav>
@@ -36,7 +36,7 @@ export default function TopNav() {
           <button onClick={toggleTheme} className="text-indigo-500 dark:text-yellow-400 text-[var(--foreground)] hover:text-accent">
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
-          <Link href="https://twitter.com/yourhandle" target="_blank" className="text-[var(--foreground)] hover:text-accent">
+          <Link href="https://calendly.com/hello-rudy/30min" target="_blank" className="text-[var(--foreground)] hover:text-accent">
             <Calendar size={16} />
           </Link>
           <Link href="https://github.com/rudymdc" target="_blank" className="text-[var(--foreground)] hover:text-accent">
@@ -51,7 +51,7 @@ export default function TopNav() {
       <div className="max-w-3xl mx-auto flex justify-between items-center py-4 px-6 xl:px-0 text-m bg-gray-50 dark:bg-gray-950">
           <nav className="block md:hidden">
             <p className='mb-2'><Link onClick={handleClick} href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link></p>
-            <p className='mb-2'><Link onClick={handleClick} href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link></p>
+            {/* <p className='mb-2'><Link onClick={handleClick} href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link></p> */}
             <p className='mb-2'><Link onClick={handleClick} href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link></p>
             <p className='mb-2'><Link onClick={handleClick} href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link></p>
           </nav>

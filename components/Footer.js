@@ -16,7 +16,7 @@ export default function Footer() {
               Email
             </Link>
             <Link
-              href="https://nextjs.org"
+              href="https://calendly.com/hello-rudy/30min"
               className="text-indigo-500 hover:underline dark:text-indigo-400"
               target="_blank" rel="noopener noreferrer"
             >

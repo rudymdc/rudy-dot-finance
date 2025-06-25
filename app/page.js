@@ -205,15 +205,17 @@ export default function Home() {
                 {[{
                   title: "LiquidLaunch Sniper",
                   desc: "Marginal ROI analysis on ad spend, building from weekly performance to an annualized budget plan.",
-                  href: "/",
+                  // href: "/",
                   img: "/images/gtm.jpg", // Replace with your actual image paths
-                  tags: ["Web3", "Event Listening", "Python"],
+                  tags: ["Coming Soon"],
+                  // tags: ["Web3", "Event Listening", "Python"],
                 }, {
                   title: "Telegram Chat Analytics",
                   desc: "SaaS revenue model built bottoms-up by cohort. Tracks subscription behavior over time.",
-                  href: "/",
+                  // href: "/",
                   img: "/images/revops.jpg",
-                  tags: ["Telegram API", "Charting", "Python"],
+                  tags: ["Coming Soon"],
+                  // tags: ["Telegram API", "Charting", "Python"],
                 }].map(({ title, desc, href, img, tags }, idx) => (
                   <div
                     key={idx}

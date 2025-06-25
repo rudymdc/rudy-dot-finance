@@ -4,6 +4,9 @@ import TopNav from "@/components/TopNav";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import ThemeWrapper from "@/components/ThemeWrapper";
+import Script from "next/script";
+import AnalyticsProvider from "./analytics/AnalyticsProvider";
+
 
 export const metadata = {
   title: "Rudy's Website",
@@ -13,8 +16,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-TQ7XNLW00G`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TQ7XNLW00G');
+          `}
+        </Script>
+      </head>
       <body>
         <ThemeWrapper> {/* <-- Applies "light" or "dark" on the root div */}
+          <AnalyticsProvider />
           <div className="flex h-screen overflow-hidden font-sans text-[var(--foreground)] bg-[var(--background)]">
             <Sidebar />
             <div className="flex-1 h-screen overflow-y-auto">

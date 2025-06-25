@@ -62,10 +62,10 @@ export default function MePage() {
           </p>
 
           <ul className="list-disc pl-4">
-            <li>Email: <Link href="mailto:hello@rudy.financ" target="_blank" className="text-indigo-500 dark:text-indigo-400">hello@rudy.finance</Link></li>
+            <li>Email: <Link href="mailto:hello@rudy.finance" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">hello@rudy.finance</Link></li>
             <li>Calendly</li>
-            <li><Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400">LinkedIn</Link></li>
-            <li><Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400">Github</Link></li>
+            <li><Link href="https://www.linkedin.com/in/rudy-martin-del-campo/" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">LinkedIn</Link></li>
+            <li><Link href="https://github.com/rudymdc" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">Github</Link></li>
           </ul>
         </div>
 
@@ -76,11 +76,11 @@ export default function MePage() {
           </p>
 
           <ul className="list-disc pl-4">
-            <li>Reading <Link href="https://press.stripe.com/poor-charlies-almanack" target="_blank" className="text-indigo-500 dark:text-indigo-400">Poor Charlie&apos;s Almanac</Link></li>
-            <li>Playing <Link href="https://zelda.nintendo.com/tears-of-the-kingdom/ca/" target="_blank" className="text-indigo-500 dark:text-indigo-400">Legend of Zelda: Tears of the Kingdom</Link></li>
-            <li>Exploring <Link href="https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm" target="_blank" className="text-indigo-500 dark:text-indigo-400">HyperEVM</Link></li>
-            <li>Refurbishing an <Link href="https://www.soundonsound.com/reviews/akai-mpc2000xl" target="_blank" className="text-indigo-500 dark:text-indigo-400">MPC 2000XL</Link></li>
-            <li>Learning how to landscape and <Link href="https://thegrassoutlet.com/grass-care/" target="_blank" className="text-indigo-500 dark:text-indigo-400">lay new sod</Link></li>
+            <li>Reading <Link href="https://press.stripe.com/poor-charlies-almanack" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">Poor Charlie&apos;s Almanac</Link></li>
+            <li>Playing <Link href="https://zelda.nintendo.com/tears-of-the-kingdom/ca/" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">Legend of Zelda: Tears of the Kingdom</Link></li>
+            <li>Exploring <Link href="https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">HyperEVM</Link></li>
+            <li>Refurbishing an <Link href="https://www.soundonsound.com/reviews/akai-mpc2000xl" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">MPC 2000XL</Link></li>
+            <li>Learning how to landscape and <Link href="https://thegrassoutlet.com/grass-care/" target="_blank" className="text-indigo-500 dark:text-indigo-400 hover:underline">lay new sod</Link></li>
           </ul>
         </div>
 

@@ -2,7 +2,7 @@
 import Content from "./Content";
 
 export const metadata = {
-  title: "FinDev Guide - NetSuite - v2: The Python Insight Lab",
+  title: "FinDev for NetSuite - v2: The Python Insight Lab",
   description:
     "Rapidly prototype analysis and visualize insights from NetSuite — no ETL needed",
 };

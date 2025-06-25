@@ -67,13 +67,14 @@ main h1 {
   border-radius: 6px;
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+
+@supports (scrollbar-color: oklch(55.2% .016 285.938) oklch(27.4% .006 286.033)) {
+  .scroll-color {
+    scrollbar-color: oklch(55.2% .016 285.938) oklch(27.4% .006 286.033);
+  }
 }
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
-}
+
+
 
 .item {
   transform: rotate(5deg);

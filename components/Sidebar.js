@@ -53,10 +53,10 @@ export default function Sidebar() {
                     <Link href="/guides/findev-netsuite-2" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
                       FinDev for Netsuite: Python
                     </Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                    <Link href="/guides/setting-up-a-mac-for-finance-development" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
                       macOS Setup for FinDev
                     </Link>
-                    <Link href="/" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
+                    <Link href="/guides/setting-up-a-windows-pc-for-finance-development" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">
                       Windows Setup for FinDev
                     </Link>
                     {/* <Link href="" className="text-gray-700 dark:text-gray-300 hover:bg-indigo-100 hover:text-indigo-900 hover:ring-indigo-200 dark:hover:bg-indigo-950 dark:hover:text-indigo-200 dark:hover:ring-indigo-900">Python for Finance</Link> */}

@@ -73,7 +73,7 @@ export default function Content() {
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">2. Add the NetSuite JDBC Driver</h3>
       <ol className="list-disc list-inside mb-6 overflow-y-auto">
-        <li>DBeaver ▶ Database ▶ Driver Manager ▶ New</li>
+        <li>DBeaver <span className="font-semibold">&gt;</span> Database <span className="font-semibold">&gt;</span> Driver Manager <span className="font-semibold">&gt;</span> New</li>
         <li>Set class name to <code className="bg-zinc-100 dark:bg-zinc-700 px-1 rounded-xs">com.netsuite.jdbc.NQDriver</code></li>
         <li>Attach the file <code className="bg-zinc-100 dark:bg-zinc-700 px-1 rounded-xs">NetSuiteJDBC41.jar</code> from your SuiteAnalytics Connect download</li>
       </ol>
@@ -81,7 +81,7 @@ export default function Content() {
       <h3 className="text-1xl font-semibold mb-3 text-[var(--foreground)]">3. Create a NetSuite Connection</h3>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
         <div className="text-zinc-50">
-          <pre className="p-4 overflow-y-auto">
+          <pre className="p-4 overflow-y-auto scroll-color">
             <p>JDBC URL:               jdbc:ns://<span className="text-amber-400">ACCOUNT_ID</span>.suitanalytics.com:1708;role=<span className="text-amber-400">ROLE_ID</span></p>
             <p>User:                   ACCOUNT_ID_ROLE_ID</p>
             <p>Password:               TOKEN_ID:TOKEN_SECRET</p>
@@ -125,7 +125,7 @@ export default function Content() {
             SQL
           </span>
         </div>
-        <pre className="p-4 text-zinc-50 overflow-y-auto">
+        <pre className="p-4 text-zinc-50 overflow-y-auto scroll-color">
           <p><span className="text-cyan-400">DESCRIBE transaction</span>;</p>
           <p><span className="text-zinc-400">-- or</span></p>
           <p><span className="text-cyan-400">SELECT</span> * <span className="text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-400">WHERE</span> table_name = <span className="text-emerald-400">&apos;transaction&apos;</span>;</p>
@@ -140,7 +140,7 @@ export default function Content() {
             SQL
           </span>
         </div>
-        <pre className="p-4 text-zinc-50 overflow-y-auto">
+        <pre className="p-4 text-zinc-50 overflow-y-auto scroll-color">
           <p><span className="text-cyan-400">SELECT</span> * <span className="text-cyan-400">FROM</span> information_schema.columns <span className="text-cyan-400">WHERE</span> column_name ILIKE <span className="text-emerald-400">&apos;%marketing%&apos;</span>;</p>
         </pre>
       </div>
@@ -151,7 +151,7 @@ export default function Content() {
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📊 Example: Sales & Marketing Performance (CAC)</h2>
       <p className="text-md mb-4">Let&#39;s pull two datasets — one for sales orders and one for marketing spend — to estimate Customer Acquisition Cost (CAC). Export both queries to Excel and calculate:</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-4">
-        <pre className="p-4 text-zinc-50 overflow-y-auto">
+        <pre className="p-4 text-zinc-50 overflow-y-auto scroll-color">
           <p>CAC = spend / orders</p>
         </pre>
       </div>
@@ -168,7 +168,7 @@ export default function Content() {
           </span>
         </div>
         <div className="text-zinc-50">
-          <pre className="p-4 overflow-y-auto">
+          <pre className="p-4 overflow-y-auto scroll-color">
             <p><span className="text-cyan-400">SELECT</span></p>
             <p className="pl-4">tran.trandate,</p>
             <p className="pl-4">channel.name <span className="text-cyan-400">AS</span> marketing_channel,</p>
@@ -194,7 +194,7 @@ export default function Content() {
           </span>
         </div>
         <div className="text-zinc-50">
-          <pre className="p-4 overflow-y-auto">
+          <pre className="p-4 overflow-y-auto scroll-color">
             <p><span className="text-cyan-400">SELECT</span></p>
             <p className="pl-4">exp.trandate,</p>
             <p className="pl-4">dept.name <span className="text-cyan-400">AS</span> marketing_channel</p>

@@ -18,23 +18,21 @@ export default function Content() {
       </div>
 
       <p className="text-1xl mb-4">Toolkit: <span className="font-bold">Python + SuiteQL (REST API) + Pandas + Matplotlib</span>.</p>
-      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">When dashboards lag and tools are too rigid, this scriptable lab setup helps you rapidly prototype revenue analysis and visualize insights from NetSuite — no ETL needed.</blockquote>
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
+      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-12">When dashboards lag and tools are too rigid, this scriptable lab setup helps you rapidly prototype revenue analysis and visualize insights from NetSuite — no ETL needed.</blockquote>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🔍 What We&apos;re Solving</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">What We&apos;re Solving</h2>
       <p className="text-md mb-4">You&apos;ve explored NetSuite data with SQL (DBeaver), but now you want:</p>
       <ul className="list-disc list-inside mb-4">
         <li>Repeatable, codified insights that go beyond ad-hoc queries</li>
         <li>Lightweight scripts you can schedule, share, and evolve</li>
         <li>Visualizations that help you show the business what&apos;s going on</li>
       </ul>
-      <p className="text-md mb-12"><span className="font-bold">Why this matters:</span> Before investing in pipelines or dashboards this setup helps you validate what&apos;s valuable and tell powerful stories using real data.</p>
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
+      <p className="text-md mb-24"><span className="font-bold">Why this matters:</span> Before investing in pipelines or dashboards this setup helps you validate what&apos;s valuable and tell powerful stories using real data.</p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">✅ Prerequisites</h2>
-      <table className="w-full mb-12 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Prerequisites</h2>
+      <table className="w-full mb-24 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-indigo-50 dark:bg-indigo-900 dark:text-gray-400">
           <tr>
             <th scope="col" className="px-6 py-3">Item</th>
@@ -56,10 +54,9 @@ export default function Content() {
           </tr>
         </tbody>
       </table>
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📁 Project Setup</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Project Setup</h2>
       <p className="text-md mb-6">Alright, let&apos;s get your workspace ready before we dive into writing code. This helps us keep things clean and easy to follow as we move into scripting.</p>
       <p className="text-md mb-2">Create a clean project structure to keep things organized:</p>
       <div className="block bg-zinc-800 shadow-sm border border-zinc-600 rounded-lg mb-6">
@@ -88,13 +85,10 @@ export default function Content() {
 ├── csv/                    # For CSV exports from DBeaver`}
         </pre>
       </div>
-      <p className="text-md mb-12">Now that your environment is set up, let&apos;s create the connector script that allows you to communicate with NetSuite and run SuiteQL queries.</p>
-
-
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
+      <p className="text-md mb-24">Now that your environment is set up, let&apos;s create the connector script that allows you to communicate with NetSuite and run SuiteQL queries.</p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🛠️ Connector Helper (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/netsuite_rest.py</code>)</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Connector Helper (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/netsuite_rest.py</code>)</h2>
       <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">This script creates a lightweight Python function for authenticating and executing SuiteQL queries against the NetSuite REST API. It&apos;s modular, reusable, and keeps your credentials and request logic cleanly separated from your analysis code.</blockquote>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Create the file:</h3>
@@ -164,13 +158,11 @@ export default function Content() {
         </pre>
       </div>
 
-      <p className="text-md mb-12">🎉 Congrats, you&apos;re officially connected to NetSuite! Now let&apos;s build our first visualization script to track customer acquisition cost (CAC) by marketing channel.</p>
+      <p className="text-md mb-24">Congrats, you&apos;re officially connected to NetSuite! Now let&apos;s build our first visualization script to track customer acquisition cost (CAC) by marketing channel.</p>
 
-
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📊 Example: CAC Over Time by Marketing Channel (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/cac_by_channel.py</code>)</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Example: CAC Over Time by Marketing Channel (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/cac_by_channel.py</code>)</h2>
       <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">This example pulls together sales and marketing data directly from NetSuite to calculate a simple yet powerful performance metric—Customer Acquisition Cost (CAC). We&apos;ll query two separate datasets: one for orders (revenue) and one for spend, join them by date and channel, then visualize CAC trends over time.</blockquote>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Create the file:</h3>
@@ -277,13 +269,11 @@ export default function Content() {
         </pre>
       </div>
 
-      <p className="text-md mb-12">Not quite ready to connect directly via REST API? No problem. Here&apos;s how to achieve the same analysis using exported .csv files from DBeaver instead.</p>
+      <p className="text-md mb-24">Not quite ready to connect directly via REST API? No problem. Here&apos;s how to achieve the same analysis using exported .csv files from DBeaver instead.</p>
 
-
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📎 Alternative: Use CSV Exports from DBeaver (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/cac_csv_analysis.py</code>)</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Alternative: Use CSV Exports from DBeaver (<code className="text-2xl bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">scripts/cac_csv_analysis.py</code>)</h2>
       <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">If you&apos;re not ready to pull data directly from the NetSuite REST API, you can export <code className="bg-gray-100 dark:bg-gray-700 px-1 rounded-xs">.csv</code> files from DBeaver and analyze them in Python using the same techniques.</blockquote>
 
       <p className="text-md mb-2">Update your directory to include:</p>
@@ -362,7 +352,7 @@ export default function Content() {
       </div>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Expected output:</h3>
-      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-8">
+      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-24">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
             console
@@ -375,12 +365,10 @@ export default function Content() {
         </pre>
       </div>
 
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
-
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🔎 Insight Ideas to Explore</h2>
-      <table className="w-full mb-12 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Insight Ideas to Explore</h2>
+      <table className="w-full mb-24 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-indigo-50 dark:bg-indigo-900 dark:text-gray-400">
           <tr>
             <th scope="col" className="px-6 py-3">Analysis</th>
@@ -402,20 +390,18 @@ export default function Content() {
           </tr>
         </tbody>
       </table>
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">✈️ Next Steps</h2>
-      <ol className="list-decimal list-inside mb-12">
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Next Steps</h2>
+      <ol className="list-decimal list-inside mb-24">
         <li className="mb-2">Save queries and scripts in a Git repo for reusability</li>
         <li className="mb-2">Parameterize SQL by date range or channel</li>
         <li className="mb-2">Schedule with cron, Airflow, or GitHub Actions</li>
         <li className="mb-2">Upgrade to Hex or dbt for collaboration at scale</li>
       </ol>
-      <p className="border-b-1 border-gray-200 dark:border-gray-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">✅ Key Takeaway</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Key Takeaway</h2>
       <p className="text-md mb-12">This setup gives you fast, programmatic access to NetSuite data for exploration, validation, and storytelling—no need to wait for a dashboard. It&apos;s your first step to becoming the analytics engine your business actually needs.</p>
     </article>
   );

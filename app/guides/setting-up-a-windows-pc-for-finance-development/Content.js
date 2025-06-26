@@ -17,11 +17,10 @@ export default function Content() {
         </div>
       </div>
 
-      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">Whether you&apos;re just getting started or refreshing your setup, this guide walks through the tools and packages you&apos;ll want on your Windows machine to support SQL, Python, and data analysis workflows as a finance professional.</blockquote>
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
+      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-12">Whether you&apos;re just getting started or refreshing your setup, this guide walks through the tools and packages you&apos;ll want on your Windows machine to support SQL, Python, and data analysis workflows as a finance professional.</blockquote>
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🧰 System Tools & Package Managers</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">System Tools & Package Managers</h2>
       <p className="text-md mb-6">Start by installing the tools needed to manage and run your data projects.</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">1. Install Windows Terminal (Optional but Recommended)</h3>
@@ -72,7 +71,7 @@ export default function Content() {
       </div>
 
       <p className="text-md mb-2">Test with:</p>
-      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-12">
+      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-24">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
             command line
@@ -85,10 +84,8 @@ export default function Content() {
         </div>
       </div>
 
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">💻 Desktop Applications</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Desktop Applications</h2>
       <p className="text-md mb-6">These tools make it easier to work with code, databases, and the web.</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Developer & Data Tools</h3>
@@ -100,7 +97,7 @@ export default function Content() {
       </ol>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Browsers & Extensions</h3>
-      <ol className="list-disc list-inside mb-12 overflow-y-auto">
+      <ol className="list-disc list-inside mb-24 overflow-y-auto">
         <li><Link className="text-indigo-500 dark:text-indigo-400 hover:underline font-semibold" href="https://www.google.com/chrome/" target="_blank">Google Chrome</Link> – great for DevTools and extensions</li>
         <li><Link className="text-indigo-500 dark:text-indigo-400 hover:underline font-semibold" href="https://www.mozilla.org/en-US/products/" target="_blank">Firefox</Link> – alternative browser with powerful debugging</li>
         <li>Recommended Extensions:</li>
@@ -110,10 +107,8 @@ export default function Content() {
         </ol>      
       </ol>
       
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📦 Python Environment Setup</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Python Environment Setup</h2>
 
       <p className="text-md mb-2">Open PowerShell or Windows Terminal and install packages:</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
@@ -144,7 +139,7 @@ export default function Content() {
       </div>
 
       <p className="text-md mb-2">To open Jupyter Lab (browser-based notebooks):</p>
-      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-12">
+      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-24">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
             command line
@@ -157,10 +152,8 @@ export default function Content() {
         </div>
       </div>
 
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🗂️ Organize Your Workspace</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Organize Your Workspace</h2>
 
       <p className="text-md mb-2">Create a project folder for your analysis work (replace with your directory path):</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
@@ -193,19 +186,17 @@ export default function Content() {
       </div>
 
       <p className="text-md mb-2">Install VS Code extensions:</p>
-      <ol className="list-disc list-inside mb-12 overflow-y-auto">
+      <ol className="list-disc list-inside mb-24 overflow-y-auto">
         <li>Python</li>
         <li>Jupyter</li>
         <li>GitLens</li>
         <li>SQLTools</li>
       </ol>
 
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">✅ Test Your Setup</h2>
-      <table className="w-full mb-12 text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-400">
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Test Your Setup</h2>
+      <table className="w-full mb-24 text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-400">
         <thead className="text-xs text-zinc-700 uppercase bg-indigo-50 dark:bg-indigo-900 dark:text-zinc-400">
           <tr>
             <th scope="col" className="px-6 py-3">Tool</th>
@@ -241,8 +232,6 @@ export default function Content() {
           </tr>
         </tbody>
       </table>
-
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🎉 You&apos;re Ready</h2>

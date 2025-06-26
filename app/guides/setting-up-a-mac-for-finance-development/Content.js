@@ -17,11 +17,11 @@ export default function Content() {
         </div>
       </div>
 
-      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-8">Whether you&apos;re just getting started or rebuilding a clean machine, this guide walks through the tools and packages you&apos;ll want on your Mac to support SQL, Python, and data analysis workflows as a finance professional.</blockquote>
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
+      <blockquote className="border-l-4 border-indigo-500 px-6 py-2 mb-12">Whether you&apos;re just getting started or rebuilding a clean machine, this guide walks through the tools and packages you&apos;ll want on your Mac to support SQL, Python, and data analysis workflows as a finance professional.</blockquote>
+      {/* <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p> */}
 
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🧰 Command Line Tooling (via Terminal)</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Command Line Tooling (via Terminal)</h2>
       <p className="text-md mb-6">These are the building blocks for everything else. Open the Terminal app and start with:</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">1. Install Homebrew</h3>
@@ -143,7 +143,7 @@ export default function Content() {
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">5. Install wget</h3>
       <p className="text-md mb-2">wget is a command-line tool for downloading files from the web — useful for pulling CSVs, datasets, and scripts directly into your project folders.</p>
-      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-12">
+      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-24">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
             command line
@@ -156,10 +156,8 @@ export default function Content() {
         </div>
       </div>
 
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">💻 Desktop Apps (Recommended Installs)</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Desktop Apps (Recommended Installs)</h2>
       <p className="text-md mb-6">These tools make it easier to work with code, databases, and the web.</p>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Developer & Data Tools</h3>
@@ -171,7 +169,7 @@ export default function Content() {
       </ol>
 
       <h3 className="text-1xl font-semibold mb-2 text-[var(--foreground)]">Browsers & Extensions</h3>
-      <ol className="list-disc list-inside mb-12 overflow-y-auto">
+      <ol className="list-disc list-inside mb-24 overflow-y-auto">
         <li><Link className="text-indigo-500 dark:text-indigo-400 hover:underline font-semibold" href="https://www.google.com/chrome/" target="_blank">Google Chrome</Link> – great for DevTools and extensions</li>
         <li><Link className="text-indigo-500 dark:text-indigo-400 hover:underline font-semibold" href="https://www.mozilla.org/en-US/products/" target="_blank">Firefox</Link> – alternative browser with powerful debugging</li>
         <li>Recommended Extensions:</li>
@@ -181,10 +179,8 @@ export default function Content() {
         </ol>      
       </ol>
       
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">📦 Python Ecosystem Setup</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Python Ecosystem Setup</h2>
 
       <p className="text-md mb-2">Once Python is installed, install some essential libraries for finance/data analysis:</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
@@ -215,7 +211,7 @@ export default function Content() {
       </div>
 
       <p className="text-md mb-2">To open Jupyter Lab (browser-based notebooks):</p>
-      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-12">
+      <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-24">
         <div className="bg-zinc-700 rounded-t-lg border-b border-zinc-600 pt-3 pb-2 px-4">
           <span className="text-sm font-medium text-zinc-50">
             command line
@@ -228,10 +224,8 @@ export default function Content() {
         </div>
       </div>
 
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
-
       {/* ─────────────────────────────────── */}
-      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🗂️ Organize Your Workspace</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Organize Your Workspace</h2>
 
       <p className="text-md mb-2">Create a <code className="bg-zinc-100 dark:bg-zinc-700 px-1 rounded-xs">~/projects/</code> folder to store all your FinDev work:</p>
       <div className="block shadow-sm bg-zinc-800 border border-zinc-600 rounded-lg mb-6">
@@ -264,15 +258,12 @@ export default function Content() {
       </div>
 
       <p className="text-md mb-2">Install VS Code extensions:</p>
-      <ol className="list-disc list-inside mb-12 overflow-y-auto">
+      <ol className="list-disc list-inside mb-24 overflow-y-auto">
         <li>Python (Microsoft)</li>
         <li>Jupyter</li>
         <li>GitLens</li>
         <li>SQLTools</li>
       </ol>
-
-
-      <p className="border-b-1 border-zinc-200 dark:border-zinc-700 mb-12"></p>
 
       {/* ─────────────────────────────────── */}
       <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">🎉 You&apos;re Ready</h2>

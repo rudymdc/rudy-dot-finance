@@ -126,7 +126,7 @@ export default function Home() {
             <div className="main-section mb-18">
               <h2 className="text-3xl font-bold mb-1 text-[var(--foreground)]">Guides</h2>
               <p className="text-[var(--foreground)] text-lg mb-5 text-gray-500 dark:text-gray-400">
-                Hands-on playbooks for using Python, SQL, and data tools to drive better business decisions.
+                Playbooks I&apos;ve built from real world use of Python, SQL, and data tools to drive better decisions.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[{

@@ -55,13 +55,7 @@ export default function Content() {
                 )}
                 <div className="p-4">
                   <h3 className="text-lg font-semibold mb-1 text-[var(--foreground)]">
-                    {href ? (
-                      <Link href={href} className="text-accent hover:underline">
-                        {title}
-                      </Link>
-                    ) : (
-                      title
-                    )}
+                    {title}
                   </h3>
                   <p className="text-sm text-gray-700 dark:text-gray-400">{desc}</p>
                   {tags && tags.length > 0 && (

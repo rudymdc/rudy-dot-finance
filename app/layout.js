@@ -33,9 +33,11 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeWrapper> {/* <-- Applies "light" or "dark" on the root div */}
           <AnalyticsProvider />
-          <div className="flex h-screen overflow-hidden font-sans text-[var(--foreground)] bg-[var(--background)]">
-            <Sidebar />
-            <div className="flex-1 h-screen overflow-y-auto">
+          <div className="flex h-screen font-sans text-[var(--foreground)] bg-[var(--background)]">
+            <aside className="w-64 hidden md:flex flex-col border-r border-gray-300 dark:border-gray-800 bg-[var(--background)] overflow-y-auto fixed h-screen">
+              <Sidebar />
+            </aside>
+            <div className="flex-1 md:ml-64 h-screen overflow-y-auto">
               <TopNav />
               <main className="xl:px-0 px-6 py-10 max-w-3xl mx-auto">
                 {children}

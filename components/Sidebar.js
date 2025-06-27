@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
         <>
-          {/* // <aside className="sidebar w-64 h-screen bg-[var(--background)] border-r border-gray-300 dark:border-gray-800 hidden md:flex flex-col"> */}
+          <aside className="sidebar w-64 h-screen bg-[var(--background)] border-r border-gray-300 dark:border-gray-800 hidden md:flex flex-col">
 
           {/* Sticky Title */}
           <div className="sidebar-title sticky top-0 z-10 bg-[var(--background)] mx-6 py-4 border-b border-gray-300 dark:border-gray-800">
@@ -106,7 +106,7 @@ export default function Sidebar() {
               </div>
             </div>
           </div>
-        {/* </aside> */}
+        </aside>
         </>
     );
 }

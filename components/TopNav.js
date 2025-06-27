@@ -18,7 +18,7 @@ export default function TopNav() {
 
   return (
     <header className="sticky top-0 z-20 w-full bg-[var(--background)]">
-      <div className="max-w-3xl mx-auto flex justify-between items-center border-b border-gray-200 dark:border-gray-700 py-4 px-6 xl:px-0 text-m">
+      <div className="max-w-3xl mx-auto flex justify-between items-center border-b border-gray-200 dark:border-gray-700 py-4 px-6 xl:px-0 text-m h-[calc(60px)]">
         <Link href="/" className="font-semibold text-[var(--foreground)] inline md:hidden">
           <span className="text-base mr-2">📈</span>
           <span className="text-base">rudy.finance</span>

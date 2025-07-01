@@ -17,12 +17,12 @@ export default function Home() {
                 Hey, I&apos;m Rudy!
               </h1>
               <p className="text-[var(--foreground)] mb-6">
-                I&apos;m a finance and strategy operator with a builder&apos;s mindset — blending code and capital to help startups scale.
-                I&apos;ve led FP&A, GTM analytics, and business intelligence at high-growth companies and I&apos;m currently exploring the
-                edges of automation, investing, and onchain experiments.
+                I&apos;m a finance and strategy operator with a builder&apos;s mindset focused on helping startups scale efficiently.
+                I&apos;ve led FP&A, GTM analytics, and business intelligence at high growth companies and I&apos;m currently exploring the
+                edges of automation, investing, and on-chain experiments.
               </p>
               <p className="text-[var(--foreground)] mb-6">
-                Outside of work — I&apos;m a new dad, a blockchain enthusiast, and a sucker for great coffee and sci-fi. This
+                Outside of work I&apos;m a proud father of two, a collector of lightsabers and synths, and an active builder in the blockchain space. This
                 site is where I share projects, frameworks, and ideas I&apos;m refining along the way.
               </p>
               <div>

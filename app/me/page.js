@@ -28,15 +28,18 @@ export default function MePage() {
         </div>
 
         <div className="about-me">
-          <h1 className="text-4xl font-bold mb-8 text-[var(--foreground)] border-b-5 border-indigo-500">About Me</h1>
-          <p className="text-[var(--foreground)] mb-8">
-            I&apos;m Rudy — a finance and strategy operator with a builder&apos;s mindset. I work at the intersection of code and capital to help startups scale smartly and sustainably.
+          <h1 className="text-4xl font-bold mb-6 text-[var(--foreground)] border-b-5 border-indigo-500">About Me</h1>
+          <p className="text-[var(--foreground)] mb-4">
+            I&apos;m Rudy, a finance and strategy operator with a builder&apos;s mindset, focused on helping startups scale efficiently.
           </p>
-          <p className="text-[var(--foreground)] mb-8">
-            My experience spans FP&A, GTM analytics, and data infrastructure across high-growth startups. I enjoy automating workflows, modeling complex systems, and uncovering insights in messy data.
+          <p className="text-[var(--foreground)] mb-4">
+            Over the years, I&apos;ve led FP&A, GTM analytics, and business intelligence functions at high growth companies, often wearing multiple hats to bridge financial strategy with technical execution. I&apos;m especially drawn to the edges of automation, data modeling, and emerging technology, constantly looking for ways to make better decisions faster.
           </p>
+          <p className="text-[var(--foreground)] mb-4">
+            My work often lives at the intersection of spreadsheets, SQL, and strategy decks, but I&apos;m just as comfortable writing Python scripts as I am refining a board presentation. I thrive in fast moving environments where experimentation is encouraged and complexity is embraced.
+          </p>          
           <p className="text-[var(--foreground)]">
-            Outside of work, I&apos;m a new dad, blockchain enthusiast, and lover of sci-fi and specialty coffee. This site is my digital sandbox for sharing experiments, frameworks, and explorations.
+            Outside of work, I&apos;m a proud father of two, a collector of lightsabers and synths, and an active builder in the blockchain space. Whether it&apos;s developing trading bots, experimenting with new tools, or refining financial frameworks, this site is where I share the projects and ideas I&apos;m exploring along the way.        
           </p>          
         </div>
 

@@ -164,7 +164,7 @@ export default function Home() {
                           alt={title}
                           width={640}
                           height={160}
-                          className="w-full h-40 object-cover border-b border-gray-200 dark:border-gray-700"
+                          className="w-full h-60 md:h-40 object-cover border-b border-gray-200 dark:border-gray-700"
                         />
                       )}
                       <div className="p-4">
@@ -222,7 +222,7 @@ export default function Home() {
                         alt={title}
                         width={640}
                         height={160}
-                        className="w-full h-40 object-cover border-b border-gray-200 dark:border-gray-700"
+                        className="w-full h-60 md:h-40 object-cover border-b border-gray-200 dark:border-gray-700"
                       />
                     )}
                     <div className="p-4">

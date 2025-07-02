@@ -5,27 +5,24 @@ import Link from "next/link";
 import useTheme from "@/lib/useTheme";
 import { Moon, Sun, Github, Linkedin, Calendar, Menu, X } from "lucide-react";
 
-
 export default function TopNav() {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   if (!theme) return null;
 
-  //Handles the opening and closing of our nav
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="sticky top-0 z-20 w-full bg-[var(--background)]">
-      <div className="max-w-3xl mx-auto flex justify-between items-center border-b border-gray-200 dark:border-gray-700 py-4 px-6 xl:px-0 text-m h-[calc(60px)]">
+    <header>
+      <div className="max-w-3xl mx-auto flex justify-between items-center border-b border-gray-200 dark:border-gray-700 py-4 px-6 xl:px-0 text-m h-[60px]">
         <Link href="/" className="font-semibold text-[var(--foreground)] inline md:hidden">
           <span className="text-base mr-2">📈</span>
           <span className="text-base">rudy.finance</span>
         </Link>
         <nav className="space-x-6 hidden md:block">
           <Link href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link>
-          {/* <Link href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link> */}
           <Link href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link>
           <Link href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link>
         </nav>
@@ -47,16 +44,15 @@ export default function TopNav() {
           </Link>
         </div>
       </div>
-      {!isOpen ? <></> : 
-      <div className="max-w-3xl mx-auto flex justify-between items-center py-4 px-6 xl:px-0 text-m bg-gray-50 dark:bg-gray-950">
+      {isOpen && (
+        <div className="max-w-3xl mx-auto flex justify-between items-center py-4 px-6 xl:px-0 text-m bg-gray-50 dark:bg-gray-950">
           <nav className="block md:hidden">
             <p className='mb-2'><Link onClick={handleClick} href="/guides" className="text-[var(--foreground)] hover:text-accent">Guides</Link></p>
-            {/* <p className='mb-2'><Link onClick={handleClick} href="/case-studies" className="text-[var(--foreground)] hover:text-accent">Case Studies</Link></p> */}
             <p className='mb-2'><Link onClick={handleClick} href="/projects" className="text-[var(--foreground)] hover:text-accent">Projects</Link></p>
             <p className='mb-2'><Link onClick={handleClick} href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link></p>
           </nav>
-      </div>    
-      }      
-   </header>
+        </div>
+      )}
+    </header>
   );
 }

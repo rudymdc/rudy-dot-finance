@@ -36,6 +36,9 @@ export default function TopNav() {
             <Link href="/me" className="text-[var(--foreground)] hover:text-accent">About</Link>
           </nav>
           <div className="flex items-center space-x-4">
+            <button onClick={handleClick} className="text-[var(--foreground)] hover:text-accent inline md:hidden">
+              {isOpen ? <X size={16} /> : <Menu size={16} />}
+            </button>
             <button onClick={toggleTheme} className="text-indigo-500 dark:text-yellow-400 text-[var(--foreground)] hover:text-accent">
               {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
             </button>

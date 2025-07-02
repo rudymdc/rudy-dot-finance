@@ -6,12 +6,10 @@ export default function ScrollReset() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const container = document.getElementById("main-scroll-container");
-
-    setTimeout(() => {
-      if (container) container.scrollTo({ top: 0, behavior: "smooth" });
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 10);
+    const scrollContainer = document.getElementById("main-scroll-container");
+    if (scrollContainer) {
+      scrollContainer.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;

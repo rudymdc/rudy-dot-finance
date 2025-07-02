@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         {/* Scripts omitted for brevity */}
       </head>
-      <body className="overscroll-none touch-manipulation">
+      <body className="overscroll-none touch-manipulation overflow-x-hidden w-screen">
         <ThemeWrapper>
           <ScrollToTop />
           <ScrollReset />
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
           <div className="h-[60px] shrink-0" />
 
           {/* Page layout */}
-          <div className="flex h-[calc(100vh-60px)] font-sans text-[var(--foreground)] bg-[var(--background)] overflow-hidden">
+          <div className="flex h-[calc(100vh-60px)] w-full font-sans text-[var(--foreground)] bg-[var(--background)] overflow-hidden">
             <Sidebar />
 
             {/* Scrollable main content area */}

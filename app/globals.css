@@ -22,24 +22,6 @@
   --border-radius: var(--radius);
 }
 
-/* Apply Global Styles */
-html,
-body {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  max-width: 100vw;
-  overflow-x: hidden;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-}
-
-html {
-  background-color: var(--background);
-  color: var(--foreground);
-  transition: background-color 0.3s, color 0.3s;
-} 
-
 /* Dark mode overrides using the .dark class */
 .dark {
   --background: #181818;
@@ -51,16 +33,14 @@ html {
   --foreground: #ededed;
 }
 
-.dark .logo {
-  --background: #1f1f1f;
-  --foreground: #ededed;
-}
+/* Apply styles */
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+} 
 
-/* Apply Styles */
-#main-scroll-container {
-  /* scroll-padding-top: 60px;  */
-  /* border: 2px dashed red; */
-}
+
 
 main h1 {
   width: fit-content;

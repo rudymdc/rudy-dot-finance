@@ -6,8 +6,9 @@ import Footer from "@/components/Footer";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import Script from "next/script";
 import AnalyticsProvider from "./analytics/AnalyticsProvider";
-import ScrollToTop from "@/components/ScrollToTop";
 import ScrollReset from "@/components/ScrollReset";
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 export const metadata = {
   title: "Rudy's Website",
@@ -18,38 +19,36 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        {/* Scripts omitted for brevity */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-TQ7XNLW00G`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TQ7XNLW00G');
+          `}
+        </Script>
       </head>
-      <body className="w-screen max-w-full overflow-x-hidden">
-        <ThemeWrapper>
-          <ScrollToTop />
-          <ScrollReset />
+      <body>
+        <ThemeWrapper> {/* <-- Applies "light" or "dark" on the root div */}
           <AnalyticsProvider />
-
-          {/* Fixed TopNav */}
-          <div className="fixed top-0 z-30 w-full bg-[var(--background)]">
-            <TopNav />
-          </div>
-
-          {/* Spacer to prevent content overlap */}
-          <div className="h-[60px] shrink-0" />
-
-          {/* Page layout */}
-          <div className="flex h-[calc(100vh-60px)] w-full max-w-full font-sans text-[var(--foreground)] bg-[var(--background)] overflow-hidden">
+          <ScrollReset />
+          <ScrollToTop />
+          <div className="flex h-screen font-sans text-[var(--foreground)] bg-[var(--background)]">
             <Sidebar />
-
-            {/* Scrollable main content area */}
-            <div className="flex-1 flex flex-col">
-              <div id="main-scroll-container" className="flex-1 overflow-y-auto">
+            <div className="flex-1 h-screen w-screen md:w-[calc(100%)]">
+              <TopNav />
+              <div id="main-scroll-container" className="overflow-y-auto h-[calc(100vh-60px)] pb-40 md:pb-0">
                 <main className="xl:px-0 px-6 py-10 max-w-3xl mx-auto">
                   {children}
                 </main>
                 <Footer />
               </div>
             </div>
-          </div>
+          </div>        
         </ThemeWrapper>
       </body>
     </html>

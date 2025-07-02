@@ -9,8 +9,8 @@ export default function ScrollReset() {
     const container = document.getElementById("main-scroll-container");
 
     setTimeout(() => {
-      if (container) container.scrollTo({ top: 0, behavior: "smooth" });
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (container) container.scrollTo({ top: 0, behavior: "instant" });
+      window.scrollTo({ top: 0, behavior: "instant" });
     }, 10);
   }, [pathname]);
 

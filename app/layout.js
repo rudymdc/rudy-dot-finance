@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             <Sidebar />
             <div className="flex-1 h-screen w-screen md:w-[calc(100%)]">
               <TopNav />
-              <div id="main-scroll-container" className="overflow-y-auto h-[calc(100vh-60px)] pb-40 md:pb-0">
+              <div id="main-scroll-container" className="scrollbar-color overflow-y-auto h-[calc(100vh-60px)] pb-40 md:pb-0">
                 <main className="xl:px-0 px-6 py-10 max-w-3xl mx-auto">
                   {children}
                 </main>

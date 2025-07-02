@@ -19,7 +19,7 @@ export default function Sidebar() {
           </div>
 
           {/* Scrollable Content */}
-          <div className="flex-1 overflow-y-auto scrollbar-hide">
+          <div className="flex-1 overflow-y-auto scrollbar-hidden">
             <div className="sidebar-container mb-18">
 
               {/* All your sidebar sections go here */}

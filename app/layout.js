@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import Script from "next/script";
 import AnalyticsProvider from "./analytics/AnalyticsProvider";
-
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
   title: "Rudy's Website",
@@ -30,14 +30,15 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body>
+      <body className="overscroll-none">
         <ThemeWrapper> {/* <-- Applies "light" or "dark" on the root div */}
+          <ScrollToTop />
           <AnalyticsProvider />
           <div className="flex h-screen font-sans text-[var(--foreground)] bg-[var(--background)]">
             <Sidebar />
             <div className="flex-1 h-screen w-screen md:w-[calc(100%)]">
               <TopNav />
-              <div className="overflow-y-auto h-[calc(100vh-60px)] pb-40 md:pb-0">
+              <div className="overflow-y-auto h-[calc(100vh-60px)] pb-40 md:pb-0 scrollable-container">
                 <main className="xl:px-0 px-6 py-10 max-w-3xl mx-auto">
                   {children}
                 </main>

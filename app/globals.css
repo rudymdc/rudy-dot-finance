@@ -22,6 +22,18 @@
   --border-radius: var(--radius);
 }
 
+/* Apply Global Styles */
+html, body {
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+} 
+
 /* Dark mode overrides using the .dark class */
 .dark {
   --background: #181818;
@@ -33,15 +45,7 @@
   --foreground: #ededed;
 }
 
-/* Apply styles */
-html {
-  background-color: var(--background);
-  color: var(--foreground);
-  transition: background-color 0.3s, color 0.3s;
-} 
-
-
-
+/* Apply Styles */
 main h1 {
   width: fit-content;
   padding-bottom: 0.2rem;

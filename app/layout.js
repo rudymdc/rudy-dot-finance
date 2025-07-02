@@ -19,9 +19,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         {/* Scripts omitted for brevity */}
       </head>
-      <body className="overscroll-none touch-manipulation overflow-x-hidden w-screen">
+      <body className="w-screen max-w-full overflow-x-hidden">
         <ThemeWrapper>
           <ScrollToTop />
           <ScrollReset />
@@ -36,7 +37,7 @@ export default function RootLayout({ children }) {
           <div className="h-[60px] shrink-0" />
 
           {/* Page layout */}
-          <div className="flex h-[calc(100vh-60px)] w-full font-sans text-[var(--foreground)] bg-[var(--background)] overflow-hidden">
+          <div className="flex h-[calc(100vh-60px)] w-full max-w-full font-sans text-[var(--foreground)] bg-[var(--background)] overflow-hidden">
             <Sidebar />
 
             {/* Scrollable main content area */}

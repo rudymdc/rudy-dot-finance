@@ -25,11 +25,13 @@
 /* Apply Global Styles */
 html,
 body {
-  scroll-behavior: auto; /* remove weird inertia */
-  -webkit-overflow-scrolling: auto;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {

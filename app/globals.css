@@ -23,9 +23,10 @@
 }
 
 /* Apply Global Styles */
-html, body {
-  overscroll-behavior: none;
-  overflow: hidden;
+html,
+body {
+  scroll-behavior: auto; /* remove weird inertia */
+  -webkit-overflow-scrolling: auto;
 }
 
 html {
@@ -45,7 +46,17 @@ html {
   --foreground: #ededed;
 }
 
+.dark .logo {
+  --background: #1f1f1f;
+  --foreground: #ededed;
+}
+
 /* Apply Styles */
+#main-scroll-container {
+  /* scroll-padding-top: 60px;  */
+  /* border: 2px dashed red; */
+}
+
 main h1 {
   width: fit-content;
   padding-bottom: 0.2rem;

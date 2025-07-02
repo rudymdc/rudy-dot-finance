@@ -9,14 +9,14 @@ export default function Sidebar() {
           <aside className="sidebar w-64 h-screen bg-[var(--background)] border-r border-gray-300 dark:border-gray-800 hidden md:flex flex-col">
 
           {/* Sticky Title */}
-          <div className="sidebar-title sticky top-0 z-10 bg-[var(--background)] mx-6 py-4 border-b border-gray-300 dark:border-gray-800">
+          {/* <div className="sidebar-title sticky top-0 z-10 bg-[var(--background)] mx-6 py-4 border-b border-gray-300 dark:border-gray-800">
             <h1 className="flex font-semibold text-[var(--foreground)]">
               <Link href="/">
                 <span className="text-base mr-2">📈</span>
                 <span className="text-base">rudy.finance</span>
               </Link>
             </h1>
-          </div>
+          </div> */}
 
           {/* Scrollable Content */}
           <div className="flex-1 overflow-y-auto scrollbar-hide">
